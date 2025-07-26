@@ -45,19 +45,19 @@
         <div class="header__container flex justify-between align-center">
             <a class="header__logo logo" href="/" aria-label="На главную">Евгения Беленко</a>
             <nav class="nav flex justify-between align-center" aria-label="Основное меню">
-                <a class="nav__link" href="#">Главная</a>
+                <a class="nav__link" href="#hero">Главная</a>
                 <ul class="nav__list">
-                    <li><a class="nav__link" href="#">Услуги</a></li>
-                    <li><a class="nav__link" href="#">Правила работы</a></li>
-                    <li><a class="nav__link" href="#">Обо мне</a></li>
+                    <li><a class="nav__link" href="#tariff">Услуги</a></li>
+                    <li><a class="nav__link" href="#work">Правила работы</a></li>
+                    <li><a class="nav__link" href="#facts">Обо мне</a></li>
                 </ul>
-                <a class="nav__link" href="#">Контакты</a>
+                <a class="nav__link" href="#contacts">Контакты</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero section">
+    <section  id="hero" class="hero section">
         <div class="hero__container">
             <div class="flex justify-between items-end mb-8">
                 <span class="subtitle" style="flex: 1;">Психолог</span>
@@ -94,7 +94,7 @@
                     <p class="header_6" style="opacity: 1; color: #fff;">
                         Практикующий  психолог с большим опытом в личной и экспертной практиках. 
                     </p>
-                    <a href="" class="header_6 hero__btn btn mt-4" style="opacity: 1;">Обсудить ваш вопрос</a>
+                    <a href="#contacts" class="header_6 hero__btn btn mt-4" style="opacity: 1;">Обсудить ваш вопрос</a>
                 </div>
             </div>
     </section>
@@ -258,7 +258,9 @@
                     <p class="accent text-center tariff__price" style="font-size: 50px">6000 руб</p>
                     <div class="tariff__btn-container flex justify-center">
                         <div class="tariff__btn-content">
-                            <button class="tariff__btn w-full header_7">Записаться</button>
+                            <button class="tariff__btn w-full header_7">
+                                <a href="#contacts" style="color: white;">Записаться</a>
+                            </button>
                         </div>
                     </div>
                 </li>
@@ -271,7 +273,9 @@
                     <p class="accent text-center tariff__price" style="font-size: 50px">8000 руб</p>
                     <div class="tariff__btn-container flex justify-center">
                         <div class="tariff__btn-content">
-                            <button class="tariff__btn w-full header_7">Записаться</button>
+                            <button class="tariff__btn w-full header_7">
+                                <a href="#contacts" style="color: white;">Записаться</a>
+                            </button>
                         </div>
                     </div>
                 </li>
@@ -364,7 +368,7 @@
 
 
     <!-- Work Principles Section -->
-    <section class="section">
+    <section id="work" class="section">
         <div class="container">
             <div class="text-center mb-16">
                 <span style="font-size: 0.875rem; color: #666; opacity: 0.7; display: block; margin-bottom: 0.5rem;">Детали</span>

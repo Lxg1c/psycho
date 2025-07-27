@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add scroll effect to header
     window.addEventListener('scroll', () => {
         const header = document.querySelector('.header');
         if (window.scrollY > 100) {
@@ -53,22 +52,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Corrected burger menu selectors
-    const burger = document.querySelector('.header__burger');
+    const burgerBtn = document.querySelector('.burger-btn');
     const nav = document.querySelector('.nav');
+    const navLinks = document.querySelectorAll('.nav__link'); // Получаем все ссылки в меню
 
-    if (burger && nav) {
-        burger.addEventListener('click', () => {
-            burger.classList.toggle('burger--active');
-            nav.classList.toggle('nav--active');
-        });
+    // Обработчик для бургер-кнопки
+    burgerBtn.addEventListener('click', function() {
+        this.classList.toggle('active');
+        nav.classList.toggle('active');
+        this.setAttribute('aria-expanded', this.classList.contains('active'));
+    });
 
-        // (опционально) Закрывать меню при клике по ссылке
-        document.querySelectorAll('.nav__link').forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('nav--active');
-                burger.classList.remove('burger--active');
-            });
+    // Обработчик для всех ссылок в меню
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Закрываем меню только если оно открыто (на мобильных)
+            if (nav.classList.contains('active')) {
+                burgerBtn.classList.remove('active');
+                nav.classList.remove('active');
+                burgerBtn.setAttribute('aria-expanded', 'false');
+            }
         });
-    }
+    });
 });

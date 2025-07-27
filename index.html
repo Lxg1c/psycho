@@ -37,15 +37,13 @@
     <header class="header">
         <div class="header__container header__container--flex">
             <a class="header__logo" href="/" aria-label="На главную">Евгения Беленко</a>
-
-            <div class="header__burger-wrapper">
-                <span class="header__menu-label">Меню</span>
-                <button class="header__burger" aria-label="Меню">
-                    <span class="header__burger-line"></span>
-                    <span class="header__burger-line"></span>
-                    <span class="header__burger-line"></span>
-                </button>
-            </div>
+            
+            <!-- Добавляем кнопку бургер-меню -->
+            <button class="burger-btn" aria-label="Меню" aria-expanded="false">
+                <span class="burger-btn__line"></span>
+                <span class="burger-btn__line"></span>
+                <span class="burger-btn__line"></span>
+            </button>
             
             <nav class="nav" aria-label="Основное меню">
                 <a class="nav__link header_7" href="#hero">Главная</a>
@@ -54,7 +52,7 @@
                     <li class="nav__item"><a class="nav__link header_7" href="#work">Правила работы</a></li>
                     <li class="nav__item"><a class="nav__link header_7" href="#facts">Обо мне</a></li>
                 </ul>
-                <a class="nav__link" href="#contacts">Контакты</a>
+                <a class="nav__link header_7" href="#contacts">Контакты</a>
             </nav>
         </div>
     </header>
@@ -290,13 +288,13 @@
     </section>
 
     <section id="place" class="place">
-        <div class="place__container">
+        <div class="place__container container">
             <div class="place__header">
                 <span class="place__subtitle">Место встречи</span>
-                <h2 class="place__title">
+                <h3 class="place__title header_3">
                     Наши встречи будут проходить в <span class="place__title-accent">уютном кабинете</span> 
                     по адресу Б. Конюшенная ул., 29. БЦ «Эра»
-                </h2>
+                </h3>
             </div>
 
             <div class="place__gallery">
@@ -547,7 +545,7 @@
             </div>
 
             <div class="footer__info">
-                <p class="footer__work-mode">Работаю как очно в Санкт-Петербурге, так и онлайн по всему миру</p>
+                <p class="footer__work-mode subtitle">Работаю как очно в Санкт-Петербурге, так и онлайн по всему миру</p>
             </div>
 
             <div class="footer__bottom">

@@ -24,8 +24,6 @@
     <link rel="icon" href="/favicon.png" type="image/png" sizes="16x16">
     <!-- Для Apple -->
     <link rel="apple-touch-icon" href="/favicon ios.png" sizes="57x57">
-    <!-- Для Android -->
-    <link rel="manifest" href="/favicon android.png" sizes="72x72">
     <!-- Manifest для PWA -->
     <meta name="theme-color" content="#1f295e">
     <!-- CSS -->
@@ -317,13 +315,13 @@
                     loading="lazy"
                 >
                 <img 
-                    src="./img/5.png" 
+                    src="img/4.png"
                     class="place__gallery-item place__gallery-item--4" 
                     alt="Интерьер кабинета психолога (фото 4)"
                     loading="lazy"
                 >
                 <img 
-                    src="./img/4.png" 
+                    src="img/5.png"
                     class="place__gallery-item place__gallery-item--5" 
                     alt="Интерьер кабинета психолога (фото 5)"
                     loading="lazy"
@@ -339,6 +337,11 @@
                     class="place__gallery-item place__gallery-item--7" 
                     alt="Интерьер кабинета психолога (фото 7)"
                     loading="lazy"
+                >
+                <img src="./img/8.jpg"
+                     class="place__gallery-item place__gallery-item--8"
+                     alt="Интерьер кабинета психолога (фото 8)"
+                     loading="lazy"
                 >
             </div>
         </div>
@@ -492,78 +495,57 @@
                 <h1 class="title-block__title header_1">Евгения Беленко</h1>
             </div>
         </div>
-        
+
         <div class="footer__container container">
+            <div class="footer__wrapper">
+                <div class="inv"></div>
+                <div class="footer__content">
+                    <img
+                            src="./img/contacts.jpeg"
+                            alt="Контакты психолога"
+                            class="footer__image"
+                            loading="lazy"
+                    >
 
-            <div class="footer__content">
-                <img 
-                    src="./img/contacts.jpeg" 
-                    alt="Контакты психолога" 
-                    class="footer__image"
-                    loading="lazy"
-                >
-                
-                <div class="footer__contacts-card">
-                    <h3 class="footer__contacts-title">Способы связи</h3>
-                    
-                    <div class="footer__contacts-list">
-                        <a href="tel:+79999999999" class="footer__contact-item">
-                            <svg class="footer__contact-icon" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                            </svg>
-                            <div class="footer__contact-info">
-                                <div class="footer__contact-type">Телефон</div>
-                                <div class="footer__contact-value">+7 (999) 999-99-99</div>
+                    <div class="footer__contacts-card">
+                        <div class="footer__contacts-top">
+                            <p class="footer__invitation header_6">Напишите мне и мы обязательно обсудим вашу ситуацию</p>
+                            <div class="footer__button-wrapper">
+                                <a href="#" class="footer__button footer__button--telegram">Написать в Telegram <i class="footer__icon fa-brands fa-telegram fa-2xl"></i></a>
                             </div>
-                        </a>
 
-                        <a href="mailto:evgeniya.belenko@example.com" class="footer__contact-item">
-                            <svg class="footer__contact-icon" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                            <div class="footer__contact-info">
-                                <div class="footer__contact-type">Email</div>
-                                <div class="footer__contact-value">evgeniya.belenko@example.com</div>
+                            <div class="footer__button-wrapper">
+                                <a href="#" class="footer__button footer__button--whatsapp">Написать в Whatsapp <i class="footer__icon fa-brands fa-whatsapp fa-2xl"></i></a>
                             </div>
-                        </a>
+                        </div>
 
-                        <a href="https://t.me/evgeniya_belenko" class="footer__contact-item" target="_blank" rel="noopener noreferrer">
-                            <svg class="footer__contact-icon" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                            </svg>
-                            <div class="footer__contact-info">
-                                <div class="footer__contact-type">Telegram</div>
-                                <div class="footer__contact-value">@evgeniya_belenko</div>
+                        <div class="footer__contacts-bottom">
+                            <div class="footer__contacts-info">
+                                <p class="footer__phone header_4">+7 999 999 99 99</p>
+                                <p class="footer__email header_4">test@gmail.com</p>
                             </div>
-                        </a>
 
-                        <div class="footer__contact-item">
-                            <svg class="footer__contact-icon" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                            <div class="footer__contact-info">
-                                <div class="footer__contact-type">Адрес кабинета</div>
-                                <div class="footer__contact-value">Б. Конюшенная ул., 29<br>БЦ «Эра», Санкт-Петербург</div>
+                            <div class="footer__social-links">
+                                <a class="footer__social-link"><i class="footer__social-icon fa-brands fa-telegram fa-2xl"></i></a>
+                                <a class="footer__social-link"><i class="footer__social-icon fa-brands fa-whatsapp fa-2xl"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="footer__info">
-                <p class="footer__work-mode subtitle">Работаю как очно в Санкт-Петербурге, так и онлайн по всему миру</p>
-            </div>
 
-            <div class="footer__bottom">
-                <ul class="footer__links">
+            <div class="footer__legal" style="display: flex ">
+                <div class="inv"></div>
+                <ul class="footer__legal-links" style="flex: 5">
                     <li class="footer__copyright">Все права защищены 2025</li>
-                    <li><a href="#" class="footer__link">Политика конфиденциальности</a></li>
-                    <li><a href="https://t.me/front_end_devil" class="footer__link">Разработка сайта</a></li>
+                    <li><a href="#" class="footer__legal-link">Политика конфиденциальности</a></li>
+                    <li><a href="https://t.me/front_end_devil" class="footer__legal-link">Разработка сайта</a></li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="scripts/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/3a3261fc24.js" crossorigin="anonymous"></script>
 </body>
 </html>

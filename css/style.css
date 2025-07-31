@@ -1270,6 +1270,18 @@ a {
     .footer__image {
         max-width: 100%
     }
+
+    .footer__contacts-top {
+        width: 100%;
+    }
+
+    .footer__content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__legal-links {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 568px) {
